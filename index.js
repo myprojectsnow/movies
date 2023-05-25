@@ -78,9 +78,9 @@ const compradores = connectar.define('usuarios_compradores',{
   token: {type: Sequelize.STRING}
 });
 
-tabela.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
+//tabela.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
 
-compradores.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
+//compradores.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
 
 app.get('/',(req,res)=>{
 
