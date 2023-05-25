@@ -1,0 +1,1028 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+
+body 
+{
+  background-color: black;
+}
+
+header
+{
+  /*border: 1px solid white;*/
+  height: 200px;
+}
+
+
+header img
+{
+  width: 100%;
+  max-height: 250px;
+}
+
+
+header .menu 
+{
+  /*border: 1px solid red;*/
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top: -20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+header .menu .Quadros-menu
+{
+  /*border: 1px solid white;*/
+  width: 50%;
+  height: 80px;
+}
+
+header .menu .Quadros-menu .Quadro-button
+{
+  /*border: 1px solid red;*/
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background-color: var(--bs-success);
+}
+
+header .menu .Quadros-menu .Quadro-button img 
+{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+header .menu .Quadros-menu .Quadro-button:hover
+{
+  background-color: #013220;
+  transition: 0.5s;
+}
+
+header .menu .Quadros-menu .Quadro-button:not(:hover)
+{
+  background-color: var(--bs-success);
+  transition: 0.5s;
+}
+
+
+header .menu .Quadros-menu #colors 
+{
+  background-color: var(--bs-body-color);
+}
+
+header .menu .Quadros-menu #colors:hover
+{
+  background-color: var(--bs-secondary-color);
+  transition: 0.5s;
+}
+
+
+header .menu .Quadros-menu #color:not(:hover)
+{
+  background-color: var(--bs-orange);
+  transition: 0.5s;
+}
+
+header .menu .Quadros-menu .Quadro-button a 
+{
+  color: white;
+  text-decoration: none;
+  font-family: arial;
+}
+
+.Quadro-comprar
+{
+  /*border: 1px solid red;*/
+  margin-top: 300px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.Quadro-comprar .Quadro-central
+{
+  /*border: 1px solid black;*/
+  height: 80px;
+  display: grid;
+  place-items: center;
+  font-family: arial;
+}
+
+.Quadro-comprar .Quadro-central p 
+{
+  font-size: 20px;
+  color: white;
+}
+
+
+.Quadro-nodification
+{
+  /*border: 1px solid green;*/
+  height: 415px;
+  display: grid;
+  place-items: center;
+}
+
+.Quadro-nodification .Quadro-central-nodification
+{
+  /*border: 1px solid red;*/
+  height: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside
+{
+  /*border: 1px solid red;*/
+    display: grid;
+    place-items: center;
+    height: 50%;
+}
+
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside p 
+{
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.slider {
+    height: 214px;
+    position: relative;
+    margin: 0;
+    padding: 0 4%;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+.slider h3{
+  position: absolute;
+  top: 10px;
+  z-index: 30;
+  color: white;
+  font-family: arial;
+}
+
+.slider .handle.handlePrev {
+    left: 11px;
+
+}
+
+.slider .handle.handleNext {
+    right: 11px;
+
+}
+
+.slider .handle.active {
+    cursor: pointer;
+}
+
+.slider .handle {
+    background: red;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    height: 251px;
+    bottom: 0;
+    z-index: 20;
+    width: 7%;
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+}
+
+.fa{
+  font-size: 46px;
+  margin-top: 120px;
+}
+
+.row {
+  overflow: hidden;
+}
+.row__inner {
+  -webkit-transition: 450ms -webkit-transform;
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70.3125px 0;
+  padding-bottom: 10px;
+}
+
+
+.gui-card {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+.gui-card__img {
+  width: 250px;
+  height: 140.625px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gui-card__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+}
+.gui-card__details:after,
+.gui-card__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+
+.gui-card__details:before {
+  content: url('../imagem/torrent.png'); 
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 7px;
+  margin-top: -13px;
+  text-align: center;
+  z-index: 2;
+}
+.gui-card:hover .gui-card__details {
+  opacity: 1;
+}
+.gui-card__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+.gui-card__title img{
+ 
+width: 30px;
+height: 30px;
+
+}
+
+.row__inner:hover {
+  -webkit-transform: translate3d(-62.5px, 0, 0);
+          transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .gui-card {
+  opacity: 0.3;
+}
+.row__inner:hover .gui-card:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 1;
+}
+.gui-card:hover ~ .gui-card {
+  -webkit-transform: translate3d(125px, 0, 0);
+          transform: translate3d(125px, 0, 0);
+}
+
+
+.wallpaper-black
+{
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  background-color: black;
+  opacity: 0.9;
+  margin-top: 110px;
+  padding: 10px;
+}
+
+.wallpaper-black .wallpaper-black-title
+{
+  /*border: 1px solid white;*/
+  width: 100%;
+  height: 110px;
+  display: grid;
+  place-items: center;
+}
+
+.wallpaper-black .wallpaper-black-title p 
+{
+  color: white;
+}
+
+.show-video
+{
+  /*border: 1px solid white;*/
+  margin-top: 110px;
+  height: 1080px;
+  padding: 10px;
+}
+
+.show-video .video 
+{
+  /*border: 1px solid white;*/
+  height: 100%;
+}
+
+.show-video .video video 
+{
+  border-style: none;
+}
+
+.player 
+{
+  /*border: 1px solid white;*/
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.player .autoplayer
+{
+  /*border: 1px solid red;*/
+  width: 200px;
+  height: 100%;
+  background-color: red;
+  display: grid;
+  place-items: center;
+  margin-left: 5px;
+}
+
+.player .autoplayer p 
+{
+  color: white;
+  font-weight: 600;
+}
+
+.player .autoplayer svg
+{
+  color: white;
+}
+
+.Go 
+{
+  /*border: 1px solid white;*/
+}
+
+.Go .container 
+{
+  /*border: 1px solid blue;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Go .container .container-token
+{
+  padding: 10px;
+}
+
+.Go .container .container-token p 
+{
+  color: white;
+}
+
+.Go .container .container-token label
+{
+  font-family: arial;
+  color: white;
+}
+
+.Go .container .container-token h1
+{
+  font-family: arial;
+  color: white;
+}
+
+.Go .container .container-token input
+{
+  border-style: none;
+  background-color: var(--bs-secondary-bg);
+  text-align: center;
+  font-family: arial;
+  border-radius: 1px;
+}
+
+.Go .container .container-token input:focus
+{
+  outline: none;
+}
+
+.Go .container .container-token button 
+{
+  border-style: none;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 1px;
+  font-weight: 600;
+  font-family: arial;
+}
+
+.Go .container .container-token button:hover
+{
+  animation: animation-text 0.5s infinite;
+}
+
+.Go .container .container-token #other-color
+{
+  background-color: var(--bs-body-color);
+}
+
+.Go .container .container-token .tradutions
+{
+  text-align: center;
+  background-color: var(--bs-primary);
+}
+
+.Go .container .container-download
+{
+  /*border: 1px solid white;*/
+  height: 50px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  background-color: var(--bs-body-color);
+}
+
+.Go .container #put-flex
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Go .container .container-download:hover
+{
+  background-color: var(--bs-secondary-color);
+  transition: 0.5s;
+}
+
+.Go .container .container-download:not(:hover)
+{
+  background-color: var(--bs-body-color);
+  transition: 0.5s;
+}
+
+.Go .container #download
+{
+  background-color: var(--bs-success);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Go .container #download:hover
+{
+  background-color: #013220;
+  transition: 0.5s;
+}
+
+.Go .container #download:not(:hover)
+{
+  background-color: var(--bs-success);
+  transition: 0.5s;
+}
+
+.Go .container .container-download a 
+{
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes animation-text{
+  from{color: white;}
+  to{color: transparent;}
+}
+
+
+footer
+{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+footer #footer 
+{
+  font-family: arial;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+footer .Quadros-footer
+{
+  /*border: 1px solid white;*/
+  width: 50%;
+  height: 500px;
+}
+
+footer .Quadros-footer svg
+{
+  color: var(--bs-primary);
+  animation: animar_img 0.5s infinite;
+}
+
+@keyframes animar_img
+{
+  from{color: var(--bs-white);}
+  to{color: var(--bs-primary);}
+}
+
+footer .Quadros-footer img 
+{
+  width: 100%;
+  height: 100%;
+}
+
+.container-central
+{
+  display: none;
+}
+
+
+.container-central .modal-central 
+{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: grid;
+  place-items: center;
+}
+
+.container-central .modal-central .Quadro-modal
+{
+  /*border: 1px solid red;*/
+  border-radius: 1px;
+  width: 50%;
+  height: 500px;
+  position: absolute;
+  background-color: rgba(0, 0, 0);
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal
+{
+  /*border: 1px solid red;*/
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-top: -50px;
+  margin-right: -20px;
+  background-color: red;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal svg
+{
+  width: 50px;
+  height: 50px;
+  color: var(--bs-white);
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal svg:hover
+{
+  color: black;
+  transition: 0.5s;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal svg:not(:hover)
+{
+  color: var(--bs-white);
+  transition: 0.5s;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme
+{
+  /*border: 1px solid red;*/
+  margin-top: 100px;
+  height: 300px;
+  display: grid;
+  place-items: center;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form 
+{
+  /*border: 1px solid white;*/
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  width: 50%;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form label
+{
+  color: white;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form input
+{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form input:focus
+{
+  outline: none;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form button 
+{
+  width: 100%;
+  height: 50px;
+  border-style: none;
+  background-color: var(--bs-success);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form button:hover
+{
+  background-color: #013220;
+  transition: 0.5s;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form button:not(:hover)
+{
+  background-color: var(--bs-success);
+  transition: 0.5s;
+}
+
+
+.alerts 
+{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: none;
+}
+
+.alerts .title-alerts
+{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.alerts .title-alerts svg
+{
+  color: white;
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+.alerts .title-alerts svg:hover
+{
+  color: red;
+  transition: 0.5s;
+}
+
+.alerts .title-alerts svg:not(:hover)
+{
+  color: white;
+  transition: 0.5s;
+}
+
+.alerts .Quadro-central-alerts
+{
+  /*border: 1px solid white;*/
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.alerts .Quadro-alerts
+{
+  /*border: 1px solid blue;*/
+  width: 80%;
+  height: 500px;
+  background-color: black;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+.show-video
+{
+  /*border: 1px solid white;*/
+  height: 400px;
+}
+
+.show-video .video 
+{
+  /*border: 1px solid red;*/
+}
+
+.wallpaper-black
+{
+  /*border: 1px solid white;*/
+  height: 400px;
+}
+
+.player
+{
+  height: 100px;
+}
+
+.player .autoplayer
+{
+  height: 100%;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal
+{
+  /*border: 1px solid red;*/
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: -30px;
+  margin-right: -20px;
+  background-color: var(--bs-primary);
+  border-radius: 100%;
+}
+
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside p
+{
+  font-size: 12px;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form 
+{
+  /*border: 1px solid white;*/
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+header
+{
+  /*border: 1px solid white;*/
+  height: 100px;
+}
+
+header img
+{
+  width: 100%;
+  max-height: 150px;
+}
+
+header .menu 
+{
+  height: 80px;
+}
+
+header .menu .Quadros-menu
+{
+  height: 50px;
+}
+
+header .menu .Quadros-menu .Quadro-button
+{
+  height: 100%;
+}
+
+header .menu .Quadros-menu .Quadro-button img 
+{
+  width: 20px;
+  height: 20px;
+}
+
+.Quadro-comprar
+{
+  margin-top: 200px;
+  height: 50px;
+}
+
+.Quadro-comprar .Quadro-central
+{
+  height: 30px;
+}
+
+.Quadro-comprar .Quadro-central p 
+{
+  font-size: 12px;
+}
+
+.Quadro-nodification .Quadro-central-nodification
+{
+  width: 80%;
+}
+
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside
+{
+  width: 100%;
+}
+
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside p
+{
+  font-size: 12px;
+}
+
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside img
+{
+  width: 50px;
+  height: 50px;
+}
+
+.wallpaper-black
+{
+  height: 300px;
+}
+
+.wallpaper-black .wallpaper-black-title
+{
+  width: 100%;
+  padding: 10px;
+}
+
+.wallpaper-black .wallpaper-black-title p
+{
+  font-size: 12px;
+}
+
+.show-video
+{
+  height: 300px;
+}
+
+.player
+{
+  height: 50px;
+}
+
+.player .autoplayer
+{
+  width: 100px;
+  height: 100%;
+}
+
+.player .autoplayer svg
+{
+  width: 30px;
+  height: 30px;
+}
+
+footer
+{
+  flex-wrap: wrap;
+}
+
+footer .Quadros-footer
+{
+  width: 100%;
+  height: 300px;
+}
+
+footer .Quadros-footer svg
+{
+  width: 70px;
+  height: 70px;
+}
+
+.container-central .modal-central .Quadro-modal
+{
+  width: 80%;
+}
+
+.container-central .modal-central .Quadro-modal
+{
+  margin-top: 50px;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal
+{
+  /*border: 1px solid red;*/
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: -30px;
+  margin-right: -20px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-title-modal svg
+{
+  width: 30px;
+  height: 30px;
+}
+
+.container-central .modal-central .Quadro-modal .Quadro-forme form 
+{
+  /*border: 1px solid white;*/
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+}
+
